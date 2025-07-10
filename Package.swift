@@ -30,21 +30,9 @@ let package = Package(
             targets: ["SwiftJWT"]
         )
     ],
-    dependencies: [
-        .package(name: "CryptorRSA", url: "https://github.com/Kitura/BlueRSA.git", from: "1.0.202"),
-        .package(name: "Cryptor", url: "https://github.com/Kitura/BlueCryptor.git", from: "2.0.1"),
-        .package(name: "CryptorECC", url: "https://github.com/Kitura/BlueECC.git", from: "1.2.200"),
-        .package(url: "https://github.com/Kitura/LoggerAPI.git", from: "2.0.0"),
-        .package(url: "https://github.com/Kitura/KituraContracts.git", from: "2.0.1")
-    ],
+    dependencies: [],
     targets: [
-        .target(name: "SwiftJWT", dependencies: [
-            "LoggerAPI",
-            "KituraContracts",
-            "CryptorRSA",
-            "Cryptor",
-            "CryptorECC",
-        ]),
+        .target(name: "SwiftJWT", dependencies: []),
         .testTarget(name: "SwiftJWTTests", dependencies: ["SwiftJWT"])
 	]
 )

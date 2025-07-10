@@ -14,8 +14,7 @@
  * limitations under the License.
  **/
 
-import Cryptor
-import LoggerAPI
+
 import Foundation
 
 class BlueHMAC: SignerAlgorithm, VerifierAlgorithm {

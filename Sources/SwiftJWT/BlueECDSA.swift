@@ -14,8 +14,7 @@
  * limitations under the License.
  **/
 
-import CryptorECC
-import LoggerAPI
+
 import Foundation
 
 // Class for ECDSA signing using BlueECC
